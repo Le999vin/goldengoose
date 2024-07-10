@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produkte - Webshop</title>
+    <link rel="stylesheet" href="produkte.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="menprodukte.html">Men Sneaker</a></li>
+                <li><a href="womenprodukte.html">Women Sneaker</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="kontakt.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Men Sneakers</h2>
+            <div class="flex-container">
+                <div class="product flex-item">
+                    <div id="product"></div>
+                    <img src="imgs/golden goose green.png" alt="Produkt 1" />
+                    <h3>Super-Star Herren mit eisgrauem Raulederstern und grüner Lederferse</h3>
+                    <p>A timeless classic, constantly evolving: Our Golden Super-Star for men features a white leather upper, ice gray suede star, green leather heel, and cream-white laces.</p>
+                    <p class="price">480 CHF</p>
+                    <button onclick="addToCart('Super-Star Herren mit eisgrauem Raulederstern und grüner Lederferse', 480, 'imgs/golden goose green.png', 'A timeless classic, constantly evolving: Our Golden Super-Star for men features a white leather upper, ice gray suede star, green leather heel, and cream-white laces.')">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="imgs/Raulederstern und grünem Leder an der Ferse.png" alt="Produkt 2" />
+                    <h3>Super-Star mit rotem Raulederstern und grünem Leder an der Ferse</h3>
+                    <p>A timeless legend in constant evolution: Our Golden Super-Star features a white leather upper, a red suede star, and dark green leather heel. It's completed with an ice gray suede back detail and gray laces.</p>
+                    <p class="price">480 CHF</p>
+                    <button onclick="addToCart('Super-Star mit rotem Raulederstern und grünem Leder an der Ferse', 480, 'imgs/Raulederstern und grünem Leder an der Ferse.png', 'A timeless legend in constant evolution: Our Golden Super-Star features a white leather upper, a red suede star, and dark green leather heel. It\'s completed with an ice gray suede back detail and gray laces.')">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="imgs/golden goose black.png" alt="Produkt 3" />
+                    <h3>Herren-Super-Star mit schwarzer Ferse und Metallnieten-Schriftzug</h3>
+                    <p>As an evergreen of Golden Goose, the Super-Star men's sneakers evolve with each season through innovative materials and finishes. This model features black leather on the heel, a suede star, metallic lettering on the upper, and an iconic vintage finish.</p>
+                    <p class="price">450 CHF</p>
+                    <button onclick="addToCart('Herren-Super-Star mit schwarzer Ferse und Metallnieten-Schriftzug', 450, 'imgs/golden goose black.png', 'As an evergreen of Golden Goose, the Super-Star men\'s sneakers evolve with each season through innovative materials and finishes. This model features black leather on the heel, a suede star, metallic lettering on the upper, and an iconic vintage finish.')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="featured-product">
+            <h2>Recomended Products</h2>
+            <div class="product-highlight">
+                <img src="imgs/Raulederstern und brauner Fersenpartie.png" alt="Empfohlenes Produkt" />
+                <h3>Super-Star für Herren mit Raulederstern und brauner Fersenpartie</h3>
+                <p>A timeless legend in constant evolution: Our men's model features a white leather upper, ice gray suede star, light brown leather heel, and ice gray suede accents and laces.</p>
+                <p class="price">480 CHF</p>
+                <button onclick="addToCart('Super-Star für Herren mit Raulederstern und brauner Fersenpartie', 480, 'imgs/Raulederstern und brauner Fersenpartie.png', 'A timeless legend in constant evolution: Our men\'s model features a white leather upper, ice gray suede star, light brown leather heel, and ice gray suede accents and laces.')">Add to Cart</button>
+            </div>
+        </section>
+      </section>
+      <section class="featured-product">
+          <div class="product-highlight">
+              <img src="imgs/Nappa mit perforiertem Stern und Ferse aus Rauleder.png" alt="Empfohlenes Produkt" />
+              <h3>Super-Star Herren aus Nappa mit perforiertem Stern und Ferse aus Rauleder</h3>
+              <p>A timeless legend in constant evolution. At Golden, we cherish taking our classics and reinterpreting them from new perspectives. This men's Super-Star is crafted with a white Nappa leather upper adorned with black allover logos, featuring a perforated star and a heel detail in dark blush suede. Finished with white laces for the perfect touch.</p>
+              <p class="price">510 CHF</p>
+              <button onclick="addToCart('Super-Star Herren aus Nappa mit perforiertem Stern und Ferse aus Rauleder', 510, 'imgs/Nappa mit perforiertem Stern und Ferse aus Rauleder.png', 'A timeless legend in constant evolution. At Golden, we cherish taking our classics and reinterpreting them from new perspectives. This mens Super-Star is crafted with a white Nappa leather upper adorned with black allover logos, featuring a perforated star and a heel detail in dark blush suede. Finished with white laces for the perfect touch.')">Add to Cart</button>
+          </div>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; This Page is for school Purposes only</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Goose</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Golden Goose</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="menprodukte.html">Men Sneaker</a></li>
+          <li><a href="womenprodukte.html">Women Sneaker</a></li>
+          <li><a href="Cart.html">Shopping Cart</a></li>
+          <li><a href="kontakt.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="highlighted-products">
+      <h2>Beliebteste Produkte</h2>
+      <!-- Produkt-Highlights hier einfügen -->
+    </section>
+    <main>
+      <section class="slideshow">
+        <div class="slide fade">
+          <img src="imgs/golden goose black.png" alt="Slide 1" />
+        </div>
+        <div class="slide fade">
+          <img src="imgs/grauem Stern und silberfarbenem Glitzer.png" alt="Slide 2" />
+        </div>
+        <div class="slide fade">
+          <img src="imgs/golden goose green.png" alt="Slide 3" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </section>
+
+      <section class="categories">
+        <h2>Produktkategorien</h2>
+        
+        <div class="flex-container">
+
+          <div class="category flex-item">
+            <a href="menprodukte.html">
+              <img src="imgs/golden goose blau.png" alt="Kategorie 1" />
+              <h3>Men Sneaker</h3>
+            </a>
+          </div>
+
+          <div class="category flex-item">
+            <a href="womenprodukte.html">
+              <img src="imgs/grauem Stern und silberfarbenem Glitzer.png" alt="Kategorie 2" />
+              <h3>Women Sneaker</h3>
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+      <section class="newsletter">
+        <body>
+            <form class="" action="send.php" method="post">
+                Email <input type="email" name="email" value=""> <br>
+                message <input type="text" name="message" value=""> <br>
+                <button type="submit" name="send">Send</button>
+        </body>
+    </section>    
+    </main>
+    <footer>
+      <p>&copy;This Page is for school Purposes only</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+   
+    </script>
+
+  </body>
+</html>

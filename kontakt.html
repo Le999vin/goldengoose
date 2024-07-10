@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="kontakte.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Main Page</a></li>
+          <li><a href="menprodukte.html">Men Sneaker</a></li>
+          <li><a href="womenprodukte.html">Women Sneaker</a></li>
+          <li><a href="Cart.html">Shopping Cart</a></li>
+          <li><a href="kontakt.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>About Us</h2>
+      <img src="imgs/couple.png" alt="img" />
+      <p>
+        Golden Goose was founded in Venice, Italy, in 2000 by Alessandro Gallo
+        and Francesca Rinaldo. The brand is renowned for its handcrafted shoes
+        that blend vintage design with modern aesthetics. Each pair of shoes
+        undergoes individual treatment to achieve a unique, lived-in look
+        through specialized finishing techniques. Despite its international
+        success, Golden Goose remains true to its Italian craftsmanship, with
+        production continuing in selected workshops in Italy. The brand has
+        evolved into a comprehensive lifestyle label, offering not only footwear
+        but also apparel and accessories, focusing on quality, innovation, and
+        stylish design. Golden Goose embodies the unique spirit of Venice and
+        has firmly established itself as a symbol of artisanal perfection and
+        timeless style.
+      </p>
+
+      <h2>Story about the Super-Stars</h2>
+      <img src="imgs/super-star story.png" alt="animated-image" class="animated-image">
+      <p>
+        It all began with Golden Goose's first sneaker, adorned with a star on
+        the side, famously known as the "Super-Star," which swiftly ascended to
+        become one of the brand's most legendary models. By 2007, Golden Goose
+        had already been in existence for seven years, yet its journey into the
+        realm of sneaker design was only just beginning. The introduction of the
+        Super-Star marked a pivotal moment in the sneaker market, injecting new
+        vitality into the world of athletic footwear. Its distressed, lived-in
+        appearance stirred considerable attention, setting it apart from other
+        models and heralding a new era of innovation that departed from the
+        tidy, polished styles of the time.
+      </p>
+    </main>
+    <main>
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="issue">Problem:</label>
+            <select id="issue" name="issue" required>
+              <option value="">Bitte wählen Sie ein Problem</option>
+              <option value="size">Probleme bei der Grösse</option>
+              <option value="material">Probleme beim Material</option>
+              <option value="delivery">Probleme bei der Lieferung</option>
+              <option value="quality">Probleme bei der Qualität</option>
+              <option value="other">Andere Probleme</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; This Page is for school Purposes only</p>
+    </footer>
+  </body>
+</html>
+

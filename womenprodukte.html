@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produkte - Webshop</title>
+    <link rel="stylesheet" href="produkte.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="menprodukte.html">Men Sneaker</a></li>
+                <li><a href="womenprodukte.html">Women Sneaker</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="kontakt.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Women Sneaker</h2>
+            <div class="flex-container">
+                <div class="product flex-item">
+                    <img src="imgs/silberfarbenem Stern und rosafarbener Fersenpartie.png" alt="Produkt 1" />
+                    <h3>Super-Star mit silberfarbenem Stern und rosafarbener Fersenpartie</h3>
+                    <p>A timeless classic, constantly reimagined: Our Golden Super-Star features a white leather upper, silver metallic star, pink leather heel detail, and ice gray suede accents. The design is completed with the silver GGDB lettering and white laces.</p>
+                    <p class="price">540 CHF</p>
+                    <button onclick="addToCart('Super-Star mit silberfarbenem Stern und rosafarbener Fersenpartie', 540, 'imgs/silberfarbenem Stern und rosafarbener Fersenpartie.png', 'A timeless classic, constantly reimagined: Our Golden Super-Star features a white leather upper, silver metallic star, pink leather heel detail, and ice gray suede accents. The design is completed with the silver GGDB lettering and white laces.')">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="imgs/silberfarbenem Glitzer mit eisgrauem Raulederstern.png" alt="Produkt 2" />
+                    <h3>Super-Star aus silberfarbenem Glitzer mit eisgrauem Raulederstern</h3>
+                    <p>A timeless legend in constant evolution: Our Golden Super-Star features a silver glitter upper with ice gray suede star and heel accents, completed with matching ice gray laces.</p>
+                    <p class="price">540 CHF</p>
+                    <button onclick="addToCart('Super-Star aus silberfarbenem Glitzer mit eisgrauem Raulederstern', 540, 'imgs/silberfarbenem Glitzer mit eisgrauem Raulederstern.png', 'A timeless legend in constant evolution: Our Golden Super-Star features a silver glitter upper with ice gray suede star and heel accents, completed with matching ice gray laces.')">Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <img src="imgs/schwarzen Swarovski-Kristallen und schwarzem Raulederstern.png" alt="Produkt 3" />
+                    <h3>Super-Star Damen mit schwarzen Swarovski-Kristallen und schwarzem Raulederstern</h3>
+                    <p>A timeless legend, continually evolving: Our Golden Super-Star for women features black Swarovski micro-crystals, a black suede star, and heel detail, finished with black laces.</p>
+                    <p class="price">1.250 CHF</p>
+                    <button onclick="addToCart('Super-Star Damen mit schwarzen Swarovski-Kristallen und schwarzem Raulederstern', 1250, 'imgs/schwarzen Swarovski-Kristallen und schwarzem Raulederstern.png', 'A timeless legend, continually evolving: Our Golden Super-Star for women features black Swarovski micro-crystals, a black suede star, and heel detail, finished with black laces.')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="featured-product">
+            <h2>Recommended Product</h2>
+            <div class="product-highlight">
+                <img src="imgs/goldenem Stern und schwarzer Glitzer-Ferse.png" alt="Empfohlenes Produkt" />
+                <h3>Damen Super-Star LTD mit goldenem Stern und schwarzer Glitzer-Ferse</h3>
+                <p>Our iconic Super-Stars, reinvented each season, are true cult classics. This leather model with suede upper features a gold glitter star and black glitter ankle trim.</p>
+                <p class="price">510 CHF</p>
+                <button onclick="addToCart('Damen Super-Star LTD mit goldenem Stern und schwarzer Glitzer-Ferse', 510, 'imgs/goldenem Stern und schwarzer Glitzer-Ferse.png', 'Our iconic Super-Stars, reinvented each season, are true cult classics. This leather model with suede upper features a gold glitter star and black glitter ankle trim.')">Add to Cart</button>
+            </div>
+        </section>
+        <section class="featured-product">
+          <div class="product-highlight">
+              <img src="imgs/Goldglitzer und eisgrauen Rauledereinsätzen.png" alt="Empfohlenes Produkt" />
+              <h3>Super-Star mit Stern aus Goldglitzer und eisgrauen Rauledereinsätzen</h3>
+              <p>A timeless legend in continuous evolution. At Golden, we cherish taking our classics and interpreting them anew from fresh perspectives. This Super-Star, crafted with a white leather upper, showcases a sparkling gold star, silver metallic leather on the heel, and an ice-gray suede tongue. Completing the look are the ice-gray suede panel at the back and creamy white laces, adding the perfect finishing touches.</p>
+              <p class="price">495 CHF</p>
+              <button onclick="addToCart('Super-Star mit Stern aus Goldglitzer und eisgrauen Rauledereinsätzen', 495, 'imgs/Goldglitzer und eisgrauen Rauledereinsätzen.png', 'A timeless legend in continuous evolution. At Golden, we cherish taking our classics and interpreting them anew from fresh perspectives. This Super-Star, crafted with a white leather upper, showcases a sparkling gold star, silver metallic leather on the heel, and an ice-gray suede tongue. Completing the look are the ice-gray suede panel at the back and creamy white laces, adding the perfect finishing touches.')">Add to Cart</button>
+          </div>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; This Page is for school Purposes only</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

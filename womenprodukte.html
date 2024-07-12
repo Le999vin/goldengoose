@@ -21,24 +21,27 @@
     <main>
         <section>
             <h2>Women Sneaker</h2>
-            <div class="flex-container">
-                <div class="product flex-item">
+            <label for="sort">Sortieren nach:</label>
+            <select id="sort" onchange="sortProducts()">
+                <option value="ascending">Preis aufsteigend</option>
+                <option value="descending">Preis absteigend</option>
+            </select>
+            <div class="flex-container" id="product-container">
+                <div class="product flex-item" data-price="540">
                     <img src="imgs/silberfarbenem Stern und rosafarbener Fersenpartie.png" alt="Produkt 1" />
                     <h3>Super-Star mit silberfarbenem Stern und rosafarbener Fersenpartie</h3>
                     <p>A timeless classic, constantly reimagined: Our Golden Super-Star features a white leather upper, silver metallic star, pink leather heel detail, and ice gray suede accents. The design is completed with the silver GGDB lettering and white laces.</p>
                     <p class="price">540 CHF</p>
                     <button onclick="addToCart('Super-Star mit silberfarbenem Stern und rosafarbener Fersenpartie', 540, 'imgs/silberfarbenem Stern und rosafarbener Fersenpartie.png', 'A timeless classic, constantly reimagined: Our Golden Super-Star features a white leather upper, silver metallic star, pink leather heel detail, and ice gray suede accents. The design is completed with the silver GGDB lettering and white laces.')">Add to Cart</button>
                 </div>
-
-                <div class="product">
+                <div class="product" data-price="540">
                     <img src="imgs/silberfarbenem Glitzer mit eisgrauem Raulederstern.png" alt="Produkt 2" />
                     <h3>Super-Star aus silberfarbenem Glitzer mit eisgrauem Raulederstern</h3>
                     <p>A timeless legend in constant evolution: Our Golden Super-Star features a silver glitter upper with ice gray suede star and heel accents, completed with matching ice gray laces.</p>
                     <p class="price">540 CHF</p>
                     <button onclick="addToCart('Super-Star aus silberfarbenem Glitzer mit eisgrauem Raulederstern', 540, 'imgs/silberfarbenem Glitzer mit eisgrauem Raulederstern.png', 'A timeless legend in constant evolution: Our Golden Super-Star features a silver glitter upper with ice gray suede star and heel accents, completed with matching ice gray laces.')">Add to Cart</button>
                 </div>
-
-                <div class="product">
+                <div class="product" data-price="1250">
                     <img src="imgs/schwarzen Swarovski-Kristallen und schwarzem Raulederstern.png" alt="Produkt 3" />
                     <h3>Super-Star Damen mit schwarzen Swarovski-Kristallen und schwarzem Raulederstern</h3>
                     <p>A timeless legend, continually evolving: Our Golden Super-Star for women features black Swarovski micro-crystals, a black suede star, and heel detail, finished with black laces.</p>
@@ -49,7 +52,7 @@
         </section>
         <section class="featured-product">
             <h2>Recommended Product</h2>
-            <div class="product-highlight">
+            <div class="product-highlight" data-price="510">
                 <img src="imgs/goldenem Stern und schwarzer Glitzer-Ferse.png" alt="Empfohlenes Produkt" />
                 <h3>Damen Super-Star LTD mit goldenem Stern und schwarzer Glitzer-Ferse</h3>
                 <p>Our iconic Super-Stars, reinvented each season, are true cult classics. This leather model with suede upper features a gold glitter star and black glitter ankle trim.</p>
@@ -58,7 +61,7 @@
             </div>
         </section>
         <section class="featured-product">
-          <div class="product-highlight">
+          <div class="product-highlight" data-price="495">
               <img src="imgs/Goldglitzer und eisgrauen Rauledereinsätzen.png" alt="Empfohlenes Produkt" />
               <h3>Super-Star mit Stern aus Goldglitzer und eisgrauen Rauledereinsätzen</h3>
               <p>A timeless legend in continuous evolution. At Golden, we cherish taking our classics and interpreting them anew from fresh perspectives. This Super-Star, crafted with a white leather upper, showcases a sparkling gold star, silver metallic leather on the heel, and an ice-gray suede tongue. Completing the look are the ice-gray suede panel at the back and creamy white laces, adding the perfect finishing touches.</p>
@@ -71,5 +74,25 @@
         <p>&copy; This Page is for school Purposes only</p>
     </footer>
     <script src="cart.js"></script>
+    <script>
+        function sortProducts() {
+            const sortOption = document.getElementById('sort').value;
+            const productContainer = document.getElementById('product-container');
+            const products = Array.from(productContainer.getElementsByClassName('product'));
+
+            products.sort((a, b) => {
+                const priceA = parseInt(a.getAttribute('data-price').replace('.', ''), 10);
+                const priceB = parseInt(b.getAttribute('data-price').replace('.', ''), 10);
+
+                if (sortOption === 'ascending') {
+                    return priceA - priceB;
+                } else {
+                    return priceB - priceA;
+                }
+            });
+
+            products.forEach(product => productContainer.appendChild(product));
+        }
+    </script>
 </body>
 </html>

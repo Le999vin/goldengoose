@@ -1,4 +1,3 @@
-// cart.js
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 function addToCart(productName, productPrice, productImage, productDescription) {
@@ -55,6 +54,17 @@ function displayCart() {
         const totalElement = document.createElement('p');
         totalElement.textContent = `Gesamt: ${total} CHF`;
         cartElement.appendChild(totalElement);
+    }
+}
+
+function completeOrder() {
+    if (cart.length === 0) {
+        alert('Der Warenkorb ist leer. Fügen Sie Artikel hinzu, bevor Sie eine Bestellung aufgeben.');
+    } else {
+        alert('Ihre Bestellung wurde erfolgreich abgeschlossen.');
+        cart = [];
+        localStorage.setItem('cart', JSON.stringify(cart));
+        displayCart();
     }
 }
 
